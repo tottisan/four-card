@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-size: 0.93rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body header {
+  padding: 4em 0;
+}
+
+body header h1 {
+  font-size: 2em;
+  font-weight: 200;
+  color: #4c4e61;
+}
+
+body header h2 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #4c4e61;
+}
+
+body header p {
+  color: #a3a5ae;
+}
+
+body main section .card {
+  display: flex;
+  flex-direction: column;
+  height: 18em;
+  /* max-width: 25em; */
+  border-radius: 3px;
+  box-shadow: 0 9px 7px -2px #a3a5ae;
+  padding: 2em;
+}
+
+body main section .card_header {
+  flex: 1 1 auto;
+}
+
+body main section .card_header h2 {
+  font-weight: 600;
+  color: #4c4e61;
+  margin-bottom: 0.3em;
+}
+
+body main section .card_header p {
+  color: #a3a5ae;
+}
+
+body main section .card_footer {
+  text-align: end;
+}
+
+body main section .card.cyan {
+  border-top: 5px solid #45d3d3;
+}
+
+body main section .card.red {
+  border-top: 5px solid #ea5353;
+}
+
+body main section .card.orange {
+  border-top: 5px solid #fcaf4a;
+}
+
+body main section .card.blue {
+  border-top: 5px solid #549ef2;
+}
+
+@media (min-width: 320px) {
+  body {
+    padding: 0 2em 4em;
+  }
+  body header {
+    text-align: center;
+  }
+  body header h1 {
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+  }
+  body header h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+  }
+  body main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body main section .card {
+    max-width: 25em;
+    margin-bottom: 2em;
+  }
+  body main section .card_header h2 {
+    font-size: 1.3rem;
+  }
+  body main section .card_header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body header h1 {
+    font-size: 2.3em;
+  }
+  body header h2 {
+    font-size: 2.4em;
+  }
+  body header p {
+    font-size: 1rem;
+    white-space: pre-wrap;
+  }
+  body main section {
+    flex-direction: row;
+  }
+  body main section .card {
+    max-width: 14em;
+    margin-bottom: 0;
+    margin-right: 2em;
+  }
+  body main section .card:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body main section .card {
+    max-width: 25em;
+  }
+  body main section .column > .card:first-child {
+    margin-bottom: 2em;
+  }
+}
